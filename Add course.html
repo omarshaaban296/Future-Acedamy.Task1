@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="task.css">
+    <title>Add Course</title>
+</head>
+<body>
+	<a href="Home.html" class="site-logo">
+		<strong>Future Academy</strong>
+	</a>
+
+    <nav class="format">
+		<div class="nav-links">
+			<a href="Home.html">Home</a>
+			<a href="My course.html">My course</a>
+			<a href="Add course.html">Add course</a>
+			<a href="contact us.html">contact us</a>
+		</div>
+	</nav>
+
+    <div class="container">
+        <h1>Available Courses</h1>
+        <table class="AC">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                    <th>Price Per Hour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Intro to Computer Science</td>
+                    <td>Dr. Badr</td>
+                    <td>1000 EGP</td>
+                </tr>
+                <tr>
+                    <td>System Analysis</td>
+                    <td>Dr. Salma</td>
+                    <td>770 EGP</td>
+                </tr>
+                <tr>
+                    <td>Artificial Intelligence</td>
+                    <td>Dr. Ahmed</td>
+                    <td>1200 EGP</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-container">
+            <h2>Enroll in a Course</h2>
+            <form class="enrollment-form">
+                <div class="form-group">
+                    <label >Choose Course</label>
+                    <select name="course" id="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="Intro to Computer Science">Intro to Computer Science</option>
+                        <option value="System Analysis">System Analysis</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="credit_hours">Credit Hours</label>
+                    <select name="credit_hours" id="credit_hours" required>
+                        <option value="">-- Select Hours --</option>
+                        <option value="2">2 Hours</option>
+                        <option value="3">3 Hours</option>
+                        <option value="4">4 Hours</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Clear</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
