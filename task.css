@@ -19,7 +19,6 @@
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
-    letter-spacing: 1px;
 }
 .site-logo:hover {
     transform: scale(1.1);
@@ -39,6 +38,7 @@
     padding: 15px;
 }
 .nav-links a {
+
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -497,4 +497,138 @@ textarea.input {
 }
 .btn:active {
     box-shadow: 0 4px 12px rgba(13, 228, 117, 0.25);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 20px;
+    }
+
+    .site-logo {
+        width: 80px;
+        height: 50px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 8px;
+        letter-spacing: 0;
+    }
+
+    .nav-links a {
+        letter-spacing: 0;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 30px 0 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .contact-container {
+        width: 95%;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 25px 15px;
+    }
+
+    .contact-container h1 {
+        font-size: 24px;
+    }
+
+    .form-label {
+        font-size: 13px;
+    }
+
+    .input {
+        font-size: 14px;
+        padding: 11px 13px;
+    }
+
+    textarea.input {
+        min-height: 100px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 13px;
+        min-width: 140px;
+    }
+
+    .AC {
+        margin: 20px 0;
+    }
+
+    .AC th,
+    .AC td {
+        padding: 10px 8px;
+        font-size: 11px;
+    }
+
+    .form-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-logo {
+        width: 70px;
+        height: 45px;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .nav-links {
+        gap: 8px;
+        padding: 10px 5px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .contact-container {
+        padding: 20px 12px;
+        margin: 20px auto;
+    }
+
+    .contact-container h1 {
+        font-size: 20px;
+    }
+
+    .input {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    textarea.input {
+        min-height: 80px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+        min-width: 120px;
+    }
 }
